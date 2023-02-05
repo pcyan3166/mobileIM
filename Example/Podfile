@@ -4,7 +4,9 @@ platform :ios, '10.0'
 
 target 'mobileIM_Example' do
   pod 'mobileIM', :path => '../'
-
+  pod 'Toast'
+  pod 'MBProgressHUD'
+  
   target 'mobileIM_Tests' do
     inherit! :search_paths
 
