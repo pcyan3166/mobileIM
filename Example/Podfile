@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'mobileIM_Example' do
+  pod 'mobileIM', :path => '../'
+
+  target 'mobileIM_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
