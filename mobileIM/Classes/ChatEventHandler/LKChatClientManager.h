@@ -20,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (instancetype)shareInstance;
 
 /// 启动服务
-- (void)start;
+- (void)startWithIP:(NSString *)ip andPort:(int)port;
 
 /// 关闭服务
 - (void)stop;

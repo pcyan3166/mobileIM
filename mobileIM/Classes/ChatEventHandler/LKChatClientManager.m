@@ -25,14 +25,14 @@
     return sChatClientManager;
 }
 
-- (void)start {
+- (void)startWithIP:(NSString *)ip andPort:(int)port {
     if (![[ClientCoreSDK sharedInstance] isInitialed]) {
         // 设置AppKey
         [ConfigEntity registerWithAppKey:@"5418023dfd98c579b6001741"];
         
         // 设置服务器ip和服务器端口
-      [ConfigEntity setServerIp:@"127.0.0.1"];
-      [ConfigEntity setServerPort:8901];
+        [ConfigEntity setServerIp:ip];
+        [ConfigEntity setServerPort:port];
         
         // 使用以下代码表示不绑定固定port（由系统自动分配），否则使用默认的7801端口
 //      [ConfigEntity setLocalSendAndListeningPort:-1];
